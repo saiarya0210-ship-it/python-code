@@ -1,0 +1,463 @@
+n =5
+for  rows in range(1,n+1):
+      for cols in range(1,n+1):
+         print("*", end="")
+         print()
+
+rows =6 
+for i in range(rows):
+     for j in range(i):
+         print("*",end=" ")
+         print('')
+
+# logical operators 
+a= 50
+b= 30
+print(not True)
+print(not(a > b))
+
+val1 = True
+val2 = False                        
+print("AND operator:", val1 and val2)
+
+print("OR operator:", a==b or a>b)
+
+name = input("enter your name: ")
+print("welcome", name)
+
+val= input("enter a value: ")
+print("the value  is;", val)
+
+
+first=(int)(input("enter first nnumber:"))
+second=(int)(input("enter second number:"))
+print("the sum is:", first + second)
+
+side= float (input("enter the side of square:"))
+
+print('area =', side * side)
+
+a=int(input("enter first :"))
+b=int(input("enter second:"))
+
+print("the sum is:", a >=b)
+
+int ("5")
+val=int(input("enter a number:"))
+print(type(val),val)
+
+for i in range(0,9):
+    for j in range(0,9):
+        print(i,end=' ')
+    print("")
+name = input("enter paitent name:")
+print("welcome:", name)
+age = int(input("enter paitent age:"))
+print("age:",age)
+disese = input("enter paitent disease:")
+print("disease:", disese)
+height = float(input("enter paitent height:"))
+print("height", height )
+weight= float(input("enter paitent weighht:"))
+print("weight:", weight)
+sex =input("enter paitent sex:")
+print("sex:", sex)
+street = input("enter paitent street:")
+print("street:", street)
+str1= "om nam shivay "
+len1=len(str1)
+print("length of string is:", len1)
+
+str2= "om namo narayanaya"
+len2=len(str2)
+print("lenngth of string is:", len2)
+
+final_str= str1 + str2
+print(final_str)
+print(len(final_str))
+str="hello arya"
+ch= str[9]
+print(ch)  
+str='i am indaian'
+print(str[-0:-7])
+str= "i am a student"
+print(str.capitalize())
+str= "i am a student"
+print(str.upper())
+print(str.lower())
+str= "i am a student"
+print(str.title())
+str= "i am arya studying in javascript development"
+print(str.replace("javascript","python"))
+str= "i am arya studying in javascript development"
+print(str.find("javascript"))
+str= "hello arya welcome to python programming"
+print(str.endswith("javascript"))
+str= "devil is is is good"
+print(str.count("is"))
+name= input("enter your name:")
+print("length of your name is:", len(name))
+age = int(input("enter your age:"))
+print("your age is:", age)
+x =3
+if x > 5:
+    print("x greater than 5")
+else:
+    print(" x is not greater than 5")
+marks = int(input("enter your marks:"))
+
+if marks >= 90:
+    print("Grade: A")
+elif marks >= 75:
+    print("Grade: B")
+elif marks >= 50:
+    print("Grade: C")
+else:
+    print("Grade: F")
+light = "yellow"
+
+if (light=="red"):
+    print("stop")
+elif (light=="yellow"):
+    print("ready")
+elif(light== "green"):
+    print("go")
+else:
+    print("end od the road")
+
+str = "there are many members"
+print(str.replace("are","were"))
+print(str.replace("members","students"))
+
+age= 18
+if (age >= 21):
+    print("eligible to vote")
+    print("you can vote")
+if (age < 21):
+    print("not eligible to vote")
+    print("you can't vote")
+
+age = int(input("enter your age:"))
+if (age >= 18):
+    print("you are eligible apply for driving license")
+else:
+    print("you are not eligible to apply for driving license")
+    print("you can apply after", 18 - age, "years")
+a = int(input("enter first number:"))
+b= int(input("enter second number:"))
+c= int(input("enter third number:"))
+if (a >= b) and (a >= c):
+    print("first number is largest",a)
+elif(b>=a) and (b>=c):
+    print("second number is largest",b)
+else:
+    print("third number is largest",c)
+num = int(input("enter a number:"))
+if (num % 2==0):
+    print("multiple of 2")
+else:
+    print("not a multiple ")    
+
+marks =[85,98,78,67,100]
+print(marks[-3:-1])
+list=[2,1,3,5,41,6]
+list.append(7)
+print(list)    
+list.remove (3)
+print(list)
+list.sort()
+print(list)
+tup=(1,2,3,4)
+print(tup[0])
+print(tup[1])
+tup=(95,6,7,8)
+print(tup.count(2))
+tup=(1,2,3,4,5,6,7,8,9)
+print(tup.index(5)) 
+movies=[]
+mov1=input("enter movie name:")
+mov2=input("enter movie name:")
+mov3=input("enter movie name:")
+movies.append(mov1)
+movies.append(mov2)
+movies.append(mov3)
+print(movies)
+list1=[1,2,1,3,4,5,1,6,7,8,9]
+print(list1.count(1))
+list1.remove(1)
+print(list1)
+list1.sort()
+print(list1)
+
+list2=[5,3,8,1,4]
+list2=[5,3,8,1,4]
+
+copy_list=list2.copy()
+copy_list.reverse()
+
+if(copy_list==list1):
+    print("palindrome")
+else:
+    print("NOT a palindrome")
+grade = ["A","B","C","D","E"]
+grade.sort()
+print(grade)
+print(grade)
+student =("arya","rohit","sonam","rahul")
+print(student[1])
+print(student[0])
+print(student[2])
+print(student[3])
+
+info={ 
+    "key":"value",
+    "name":"apnacollege",
+    "learning":"coding",
+    "age": 35,
+    "is_adult":True,
+    "marks":98.8
+ }
+print(info["name"])
+
+dict={
+    "name":"arya",
+    "age":20,
+    "course":"python"
+
+}
+
+dict["name"]="sahithi"
+dict["course"]="javascript"
+print(dict)
+
+
+Dict={
+    "name":"sahithi", #null value fake entey
+    "age":10,
+    "course":"python"    # another fake entery
+}
+null_info={}
+null_info["name"]=dict["name"]
+null_info["age"]=dict["age"]
+null_info["course"]=dict["course"]
+null_info["address"]=None
+print(null_info)  
+print(Dict.get)
+
+
+student={
+    "name":"rahul kumar",
+    "subjects":{
+    "maths":98,
+    "science":67,
+    "chemistry":79,    
+    }
+}    
+print(student["subjects"])
+
+collection={1,2,2,2,3,4,5,5,6,7,8,8, "hello","world","arya"}
+print(collection )
+collection.add(9)
+print(len(collection))
+
+dict1={
+    "name":"arya",
+    "street":"main road",
+    "state":"delhi",
+    "country":"india",
+    "pincode":110001
+}   
+print(dict1.update({"name":"ekta"}))
+print(dict1)
+
+colllection1= set()
+collection.add(1)
+collection.add(2)
+collection.add(3)
+collection.add("ich liebe dich")
+collection.add((1,2,3,5,6,6))
+collection.clear()
+print(collection)
+
+print(len(collection))
+
+collection={"hello","sahithi","i love you","ich liebe dich"}
+
+print(collection.pop())
+print(collection.pop())
+
+marks={}
+
+x= int(input("enter number of physics marks:"))
+marks.update({"physics":x})
+y= int(input("enter number of chemistry marks:"))
+marks.update({"chemistry":y})
+z=int(input("enter number of maths marks:"))
+marks.update({"maths":z})
+
+sets={1,2,3,4,5,5,67,78,9,10}
+sets1={1,23,4,45,5,6,7,7,8,9,11,19,10,112,34,78,90}
+print(sets.intersection(sets1))
+print(sets.union(sets1))
+print(sets.difference(sets1))
+print(sets1.difference(sets))
+
+values={
+    ("float",9.0),
+    ("int",90)
+}
+print(values)
+
+count=1
+while(count <=5):
+    print("hello arya")
+    count +=5
+    print(count)
+
+count=1
+while count<= 5:
+    print("helo king")
+    count+=6
+    print(count)
+
+n=int(input("enter number:"))
+i=1
+while i<=10:
+    print(n*i)
+    i+=1
+
+nums=[1,4,9,16,25,36,49,64,81,100]
+herores=["spiderman","ironman","thor","hulk","capitan america"]
+
+
+idx=0
+while idx<len(herores):
+    print(herores[idx])
+    idx+=1
+    print(nums[idx])
+    idx+=1
+
+nums=[1,4,9,16,25,36,49,64,81,100]
+
+x = 36
+
+i=0  
+while i<len(nums):
+    if (nums[i]==x):
+        print("FOUND at idx", i)
+    i+=1 
+
+i=1  # print 1 to 100 initialization
+while i<=100: # condition
+    print(i) # print statement
+    i+=1 # increment
+
+i=100
+while i>=1:
+    print(i)
+    i-=1 
+n= int(input("enter number:")  )
+i=1
+while i<=20:
+    print(n*i)
+    i+=1
+
+nums=[1,4,9,16,25,36,49,64,81,100]
+herores=["ironman","thor ","arya","hulk",]
+
+idx=0
+while idx <len(herores):
+    print(herores[idx])
+    idx+=2
+
+nums=[1,4,9,16,25,36,49,64,81,100]
+
+x=36
+
+i=0
+while i <len(nums):
+    if (nums[i]==x):
+        print("FOUND at idx", i)
+    i+=1
+
+i=0
+while i<5:
+    if(i==3):
+        i+=1
+        continue
+    print(i)
+    i+=1
+
+i=1
+while i<=5:
+    if(i%2 !=0):
+        i += 1
+        continue
+    print(i)
+    i+=1
+
+nums=[1,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
+
+for val in nums:
+    print(val)
+
+vegies=["carrot","potato","onion","tomato"]
+
+for val in vegies:
+    print(val)
+
+def cal_prod(a,b):
+    print(a*b)
+    return a*b
+cal_prod(5,6)
+
+cities=["delhi","mumbai","kolkata","chennai"]
+
+def print_len(list):
+    print(len(list))
+
+def print_list(list):
+    for item in list:
+        print(item,end=" ")
+
+
+
+# pyrhon Tkinter GUI base4d "LOVE CALCULATOR"
+
+# imnport tkinkter 
+from tkinter import *
+#import random module
+import random 
+# creating GUI window
+root = Tk()
+# Defining the container size,width=300, height=240
+root.geometry('400x240')
+# Tittle of the window 
+root.title('love calculator????')
+
+# Function to calculate love percentage
+#between the user ans partner 
+
+
+def calculate_love():
+    # values of love percentage between 1 to 100 
+    love_percentage = random.randint(1,100)
+    # Displaing the love percentage in the result label
+
+
+with open("demo.txt","r")as f:
+    data=f.read()
+
+new_data=data.replace("Java","Python")
+print(new_data)
+
+with open("demo.txt","w") as f:
+    f.write(new_data)
+
+word = "xlearning"
+with open("demo.txt","r")as f:
+    data = f.read()
+    if(data.find(word))!=-1:
+         print("Found")
+    else:
+        print("not found")   
